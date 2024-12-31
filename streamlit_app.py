@@ -11,7 +11,7 @@ def get_connection():
 def load_data():
     conn = get_connection()
     query = "SELECT * FROM trades"
-    df = pd.read_sql_query(query, conn) 
+    df = pd.read_sql_query(query, conn)
     conn.close()
     return df
 
